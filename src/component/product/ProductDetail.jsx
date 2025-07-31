@@ -15,7 +15,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`${API_URL}/${id}`, {
+        const response = await axios.get(`${API_URL}/product/${id}`, {
           headers: { "Content-Type": "application/json" },
           withCredentials: true,
         });
